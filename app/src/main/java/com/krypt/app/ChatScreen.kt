@@ -467,7 +467,7 @@ fun ChatScreen(
                         DropdownMenu(
                             expanded = showMenuExpanded,
                             onDismissRequest = { showMenuExpanded = false },
-                            containerColor = KryptCard
+                            modifier = Modifier.background(KryptCard) 
                         ) {
                             DropdownMenuItem(
                                 text = { Text("Clear Chat", color = KryptText) },
